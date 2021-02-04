@@ -16,9 +16,5 @@ export class AppComponent {
 
   constructor(
     public store: Store<AppState>,
-  ) {
-    // this.store.dispatch(new FetchPeopleDataAction());
-    // this.store.dispatch(new FetchFilmDataAction());
-    // this.store.dispatch(new FetchPlanetDataAction());
-  }
+  ) {}
 }
