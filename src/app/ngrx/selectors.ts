@@ -14,5 +14,5 @@ export const getTableDataLoadingPercent = createSelector(
   getPeopleDataIsLoading,
   getFilmDataIsLoading,
   getPlanetDataIsLoading,
-  (peopleLoading, filmsLoading, planetsLoading) => ((3 - +peopleLoading - +filmsLoading - +planetsLoading) / 3) * 100,
+  (peopleLoading, filmsLoading, planetsLoading) => ((3 - +peopleLoading - +filmsLoading - +planetsLoading) / 3) * 100, // lol
 );
