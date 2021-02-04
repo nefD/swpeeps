@@ -14,5 +14,4 @@ export class LoadingContentComponent {
   @Input() public loadingPercent = 0;
 
   constructor() { }
-
 }
