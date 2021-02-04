@@ -37,9 +37,9 @@ export interface SwapiPerson {
   films: string[];
   gender: string;
   hair_color: string;
-  height: string; // i don't have a guarantee that this will always be a number
+  height: string;
   homeworld: string;
-  mass: string; // see above
+  mass: string;
   name: string;
   skin_color: string;
   species: string[];
