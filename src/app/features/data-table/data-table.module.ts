@@ -20,8 +20,6 @@ import { MatCardModule } from '@angular/material/card';
 import { LoadingContentComponent } from './components/loading-content/loading-content.component';
 import { MatSortModule } from '@angular/material/sort';
 
-
-
 @NgModule({
   declarations: [DataTableComponent, FiltersComponent, TableComponent, PaginationComponent, LoadingContentComponent],
   exports: [
