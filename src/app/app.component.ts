@@ -11,10 +11,4 @@ import { FetchPlanetDataAction } from 'src/app/ngrx/planet-data/planet-data.acti
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'swpeeps';
-
-  constructor(
-    public store: Store<AppState>,
-  ) {}
-}
+export class AppComponent {}
