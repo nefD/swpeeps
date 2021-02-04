@@ -4,7 +4,7 @@
   <div class="filter-field">
     <mat-form-field appearance="outline">
       <mat-label>Field</mat-label>
-      <mat-select [(ngModel)]="field">
+      <mat-select [(ngModel)]="field" aria-label="Filter field">
         <mat-option *ngFor="let field of fields" [value]="field.value">
           {{field.label}}
         </mat-option>
