@@ -9,9 +9,7 @@ import {
   SwapiPlanetsResponse,
 } from 'src/app/services/swapi/swapi.interfaces';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class SwapiService {
 
   private baseUrl = 'https://swapi.dev/api';
@@ -21,7 +19,6 @@ export class SwapiService {
   public getPeople = (url: string = this.apiUrl('people/')): Observable<SwapiPeopleResponse> => this.getData(url);
   public getFilms = (url: string = this.apiUrl('films/')): Observable<SwapiFilmsResponse> => this.getData(url);
   public getPlanets = (url: string = this.apiUrl('planets/')): Observable<SwapiPlanetsResponse> => this.getData(url);
-
 
   constructor(
     protected httpClient: HttpClient,
