@@ -81,6 +81,9 @@ export const getPeopleTableData = createSelector(
 
     // Slice it, and serve!
     return people.slice((page - 1) * TableRowsPerPage, page * TableRowsPerPage);
+      
+    // Note: A potential optimization would be to avoid population until after slicing out a page,
+    // but it'd make sorting more cumbersome
   },
 );
 
