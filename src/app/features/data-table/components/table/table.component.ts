@@ -35,5 +35,4 @@ export class TableComponent {
   public sortData(sort: Sort): void {
     this.sortChanged.emit(sort);
   }
-
 }
