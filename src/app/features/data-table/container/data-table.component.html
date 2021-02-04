@@ -1,0 +1,28 @@
+<div class="data-table">
+  <app-filters
+    [fields]="filterFields"
+    (fieldChanged)="onFilterFieldChanged($event)"
+    (queryChanged)="onFilterQueryChanged($event)"
+  ></app-filters>
+
+  <app-table
+    [isLoading]="isLoading$ | async"
+    [loadingPercent]="loadingPercent$ | async"
+    [columns]="tableColumns"
+    [displayedColumns]="displayedTableColumns"
+    [dataSource]="peopleData$ | async"
+    (sortChanged)="onSortChanged($event)"
+  ></app-table>
+
+  <app-pagination
+    [currentPage]="currentPage$ | async"
+    [isLoading]="isLoading$ | async"
+    [totalCount]="peopleCount$ | async"
+    [pageCount]="totalPages$ | async"
+    (firstPage)="onFirstPage()"
+    (lastPage)="onLastPage()"
+    (nextPage)="onNextPage()"
+    (previousPage)="onPreviousPage()"
+    (setPage)="onSetPage($event)"
+  ></app-pagination>
+</div>

@@ -1,0 +1,25 @@
+.pagination-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+  padding-top: var(--spacingMedium);
+
+  &.hidden {
+    display: none;
+  }
+}
+
+
+.record-count {
+  margin-right: var(--spacingXLarge);
+}
+
+.page-input {
+  width: 3em;
+  margin: 0 var(--spacingMedium);
+}
+
+.page-count {
+  margin-right: var(--spacingMedium);
+}

@@ -1,0 +1,32 @@
+.table-wrapper {
+  margin: 0 var(--spacingLarge);
+}
+
+table {
+  width: 100%;
+
+  &.table-hidden {
+    display: none;
+  }
+}
+
+.mat-header-row {
+  background-color: var(--bgTableHeader);
+}
+
+.mat-row {
+  background-color: var(--bgWhite);
+
+  &:nth-child(even) {
+    background-color: var(--bgLightGrey);
+  }
+}
+
+.no-results-content {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.25em;
+  letter-spacing: 0.025em;
+  padding: var(--spacingLarge);
+  color: var(--fontColorDisabled);
+}

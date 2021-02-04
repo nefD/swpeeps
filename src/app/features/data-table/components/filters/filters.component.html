@@ -1,0 +1,30 @@
+<div class="table-filters">
+  <div>Find by</div>
+
+  <div class="filter-field">
+    <mat-form-field appearance="outline">
+      <mat-label>Field</mat-label>
+      <mat-select [(ngModel)]="field">
+        <mat-option *ngFor="let field of fields" [value]="field.value">
+          {{field.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="filter-query">
+    <mat-form-field appearance="outline">
+      <mat-label>Search Query</mat-label>
+      <input
+        matInput
+        [(ngModel)]="query"
+        aria-label="Search query"/>
+      <button
+        mat-button mat-icon-button matSuffix
+        aria-label="Clear search query"
+        (click)="clearQuery()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+</div>

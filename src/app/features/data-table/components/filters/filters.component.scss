@@ -1,0 +1,11 @@
+.table-filters {
+  padding: var(--spacingLarge);
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  *:not(:last-child) {
+    margin-right: var(--spacingLarge);
+  }
+}

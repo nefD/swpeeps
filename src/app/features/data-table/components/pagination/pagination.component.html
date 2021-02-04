@@ -1,0 +1,55 @@
+<div
+  class="pagination-wrapper"
+  [ngClass]="{ 'hidden': isLoading }">
+  <div class="record-count">
+    {{ totalCount }} People
+  </div>
+
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="firstPageClicked()"
+    aria-label="First page">
+    <mat-icon>first_page</mat-icon>
+  </button>
+
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="previousPageClicked()"
+    aria-label="Previous page">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+
+  <div>
+    <form (ngSubmit)="pageChanged()">
+    <mat-form-field appearance="legacy" class="page-input">
+      <input
+        matInput
+        placeholder="Page"
+        [formControl]="pageControl"
+        aria-label="Current Page"/>
+    </mat-form-field>
+    </form>
+  </div>
+
+  <div class="page-count">
+    of {{ pageCount }}
+  </div>
+
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="nextPageClicked()"
+    aria-label="Next page">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="lastPageClicked()"
+    aria-label="Last page">
+    <mat-icon>last_page</mat-icon>
+  </button>
+</div>
