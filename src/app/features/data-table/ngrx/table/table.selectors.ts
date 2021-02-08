@@ -49,7 +49,7 @@ export const getFilteredPeopleData = createSelector(
       case (DataTableColumnProperties[DataTableColumnKeys.HomeWorld]): {
         return people
         .filter(person =>
-          planets.find(planet => planet.url === person.homeworld).name.toLowerCase().includes(query));
+          planets.find(planet => planet.url === person.homeworld)?.name.toLowerCase().includes(query));
       }
       default: {
         return !field
